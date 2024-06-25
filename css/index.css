@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.dimension, main section, main .connexion,
+main .incription {
+  width: 400px;
+  height: 500px;
+}
+
+body {
+  background-color: bisque;
+  margin: 100px auto;
+}
+
+.sign, main .incription, main .connexion {
+  padding: 20px;
+  text-align: center;
+}
+.sign h1, main .incription h1, main .connexion h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.sign i, main .incription i, main .connexion i {
+  border: solid rgb(63, 48, 48) 1px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+main {
+  margin: 100px auto;
+  height: 500px;
+  width: 800px;
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+}
+main .borduVd {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+main .borduVg {
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main section {
+  /*transform: translateX(400px);*/
+  transition: all ease-in-out 0.5s;
+  position: absolute;
+  background-color: rgb(51, 51, 146);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+main section h1 {
+  margin-top: 150px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+main section p {
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  opacity: 0.9;
+}
+main section button {
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  background-color: inherit;
+  border: solid white 1px;
+  color: white;
+  border-radius: 10px;
+}
+main section .up {
+  position: absolute;
+  bottom: 143px;
+  z-index: -100;
+}/*# sourceMappingURL=index.css.map */
